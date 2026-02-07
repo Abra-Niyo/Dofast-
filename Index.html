@@ -1,0 +1,2203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO OPTIMISÉ -->
+    <title>DOFAST – Plateforme Éducative Intelligente | Téléchargement Officiel APK</title>
+    <meta name="description" content="DOFAST : Application éducative IA avec tuteur intelligent, cours personnalisés, quiz interactifs et communauté d'apprentissage. Téléchargez l'APK officiel gratuitement.">
+    <meta name="keywords" content="DOFAST application, DOFAST éducation, app d'apprentissage IA, tuteur intelligent, quiz éducatif, téléchargement APK, plateforme éducative">
+    <meta name="author" content="DOFAST Technologies">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- OPEN GRAPH / SOCIAL META -->
+    <meta property="og:title" content="DOFAST – Révolutionnez Votre Apprentissage avec l'IA">
+    <meta property="og:description" content="Tuteur IA personnel, cours adaptatifs et communauté mondiale dans une seule application éducative.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://dofast-app.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%234a00ff%22>🚀</text></svg>">
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- STYLES -->
+    <style>
+        /* ===== CSS RESET & VARIABLES ===== */
+        :root {
+            /* Couleurs principales - Thème sombre professionnel */
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --primary-dark: #4f46e5;
+            --secondary: #06b6d4;
+            --secondary-light: #22d3ee;
+            --accent: #8b5cf6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            
+            /* Couleurs de l'interface */
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-tertiary: #334155;
+            --bg-card: rgba(30, 41, 59, 0.7);
+            --bg-card-hover: rgba(30, 41, 59, 0.9);
+            --bg-glass: rgba(15, 23, 42, 0.8);
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            
+            /* Texte */
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --text-on-primary: #ffffff;
+            
+            /* Bordures */
+            --border-color: rgba(148, 163, 184, 0.1);
+            --border-light: rgba(148, 163, 184, 0.05);
+            --border-glow: rgba(99, 102, 241, 0.3);
+            
+            /* Ombres */
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-xl: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
+            --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.2);
+            --shadow-glow-secondary: 0 0 40px rgba(6, 182, 212, 0.2);
+            
+            /* Typographie */
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-heading: 'Space Grotesk', 'Inter', sans-serif;
+            
+            /* Espacements */
+            --space-3xs: 0.125rem;
+            --space-2xs: 0.25rem;
+            --space-xs: 0.5rem;
+            --space-sm: 0.75rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            --space-4xl: 6rem;
+            
+            /* Rayons de bordure */
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --radius-2xl: 1.5rem;
+            --radius-full: 9999px;
+            
+            /* Transitions */
+            --transition-fast: 150ms ease;
+            --transition-normal: 300ms ease;
+            --transition-slow: 500ms ease;
+            --transition-bounce: 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            
+            /* Z-index */
+            --z-dropdown: 10;
+            --z-sticky: 100;
+            --z-fixed: 200;
+            --z-modal: 1000;
+            --z-popover: 1010;
+            --z-tooltip: 1020;
+        }
+        
+        /* Reset */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg-gradient);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+            z-index: -1;
+        }
+        
+        /* Typographie */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: var(--space-xl);
+        }
+        
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: var(--space-lg);
+        }
+        
+        p {
+            margin-bottom: var(--space-md);
+            color: var(--text-secondary);
+            font-size: 1.125rem;
+            line-height: 1.7;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        
+        /* Layout */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+        }
+        
+        section {
+            padding: var(--space-4xl) 0;
+            position: relative;
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto var(--space-4xl);
+        }
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: var(--space-md) auto 0;
+        }
+        
+        /* ===== HEADER & NAVIGATION ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: var(--z-fixed);
+            padding: var(--space-md) 0;
+            transition: all var(--transition-normal);
+            backdrop-filter: blur(10px);
+            background: var(--bg-glass);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .header.scrolled {
+            padding: var(--space-xs) 0;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: var(--space-2xl);
+            align-items: center;
+        }
+        
+        .nav-link {
+            position: relative;
+            font-weight: 500;
+            color: var(--text-secondary);
+            padding: var(--space-xs) 0;
+            transition: color var(--transition-fast);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            transition: width var(--transition-normal);
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--text-primary);
+        }
+        
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        .nav-cta {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--text-on-primary);
+            padding: var(--space-sm) var(--space-xl);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            transition: all var(--transition-normal);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-md);
+            background: var(--bg-secondary);
+        }
+        
+        /* ===== HERO SECTION ===== */
+        .hero {
+            padding-top: 160px;
+            padding-bottom: var(--space-4xl);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 30% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(6, 182, 212, 0.15) 0%, transparent 50%);
+            animation: float 20s ease-in-out infinite alternate;
+            z-index: -1;
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-4xl);
+            align-items: center;
+        }
+        
+        .hero-text {
+            max-width: 600px;
+        }
+        
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: var(--space-xl);
+            line-height: 1.1;
+        }
+        
+        .hero-title span {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-2xl);
+            line-height: 1.7;
+        }
+        
+        .hero-badges {
+            display: flex;
+            gap: var(--space-md);
+            margin-bottom: var(--space-2xl);
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: var(--space-xs) var(--space-md);
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .badge-icon {
+            color: var(--success);
+        }
+        
+        .hero-actions {
+            display: flex;
+            gap: var(--space-md);
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .app-mockup {
+            position: relative;
+            width: 300px;
+            height: 600px;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl), var(--shadow-glow);
+            border: 1px solid var(--border-color);
+            transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+            transition: transform var(--transition-normal);
+        }
+        
+        .app-mockup:hover {
+            transform: perspective(1000px) rotateY(-5deg) rotateX(3deg);
+        }
+        
+        .mockup-screen {
+            width: 100%;
+            height: 100%;
+            background: var(--bg-primary);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+        
+        .mockup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: var(--space-md);
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .mockup-messages {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+            flex: 1;
+        }
+        
+        .message {
+            max-width: 80%;
+            padding: var(--space-md);
+            border-radius: var(--radius-lg);
+            animation: messageSlide 0.5s ease-out;
+        }
+        
+        .message.user {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: var(--radius-xs);
+        }
+        
+        .message.ai {
+            background: var(--bg-tertiary);
+            align-self: flex-start;
+            border-bottom-left-radius: var(--radius-xs);
+        }
+        
+        .mockup-stats {
+            background: var(--bg-secondary);
+            padding: var(--space-md);
+            border-radius: var(--radius-lg);
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .stat-value {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--primary);
+        }
+        
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        /* ===== FEATURES SECTION ===== */
+        .features {
+            background: var(--bg-secondary);
+            position: relative;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+        
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            transition: all var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), transparent);
+            opacity: 0;
+            transition: opacity var(--transition-normal);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--border-glow);
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+        }
+        
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+        
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-xl);
+            font-size: 1.75rem;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-md);
+            color: var(--text-primary);
+        }
+        
+        .feature-description {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        
+        /* ===== ABOUT SECTION ===== */
+        .about {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-4xl);
+            align-items: center;
+        }
+        
+        .about-visual {
+            position: relative;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+        
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            text-align: center;
+            transition: transform var(--transition-normal);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-glow);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .clarification-box {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), transparent);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            margin-top: var(--space-2xl);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .clarification-box::before {
+            content: '⚠️';
+            position: absolute;
+            top: var(--space-lg);
+            right: var(--space-lg);
+            font-size: 2rem;
+            opacity: 0.1;
+        }
+        
+        .clarification-title {
+            color: var(--warning);
+            font-size: 1.25rem;
+            margin-bottom: var(--space-md);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        
+        /* ===== DOWNLOAD SECTION ===== */
+        .download {
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .download::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+        }
+        
+        .download-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .download-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-3xl);
+            margin-top: var(--space-3xl);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .download-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+        }
+        
+        .download-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-2xl);
+        }
+        
+        .download-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border-radius: var(--radius-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: var(--shadow-glow);
+        }
+        
+        .download-info h3 {
+            font-size: 2rem;
+            margin-bottom: var(--space-xs);
+        }
+        
+        .download-meta {
+            display: flex;
+            gap: var(--space-lg);
+            justify-content: center;
+            margin: var(--space-xl 0);
+            padding: var(--space-xl 0);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+        
+        .meta-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .meta-text {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        
+        .download-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-md);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: var(--space-lg) var(--space-2xl);
+            border-radius: var(--radius-full);
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+            margin: var(--space-xl) 0;
+        }
+        
+        .download-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: var(--shadow-xl), var(--shadow-glow-secondary);
+        }
+        
+        .download-button:active {
+            transform: translateY(-1px);
+        }
+        
+        .download-security {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-md);
+            color: var(--success);
+            font-weight: 500;
+            margin-top: var(--space-lg);
+        }
+        
+        /* ===== COMMUNITY SECTION ===== */
+        .community {
+            background: var(--bg-secondary);
+        }
+        
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+        
+        .community-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            text-align: center;
+            transition: all var(--transition-normal);
+        }
+        
+        .community-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-glow);
+            box-shadow: var(--shadow-lg), var(--shadow-glow);
+        }
+        
+        .community-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--success) 0%, var(--secondary) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--space-xl);
+            font-size: 2rem;
+        }
+        
+        .community-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            padding: var(--space-md) var(--space-xl);
+            border-radius: var(--radius-full);
+            font-weight: 500;
+            text-decoration: none;
+            transition: all var(--transition-normal);
+            margin-top: var(--space-lg);
+        }
+        
+        .community-button:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+        
+        /* ===== FAQ SECTION ===== */
+        .faq-grid {
+            max-width: 800px;
+            margin: var(--space-3xl) auto 0;
+        }
+        
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-md);
+            overflow: hidden;
+            transition: all var(--transition-normal);
+        }
+        
+        .faq-item:hover {
+            border-color: var(--border-glow);
+        }
+        
+        .faq-question {
+            padding: var(--space-xl);
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color var(--transition-fast);
+        }
+        
+        .faq-question:hover {
+            background: var(--bg-card-hover);
+        }
+        
+        .faq-icon {
+            transition: transform var(--transition-normal);
+            color: var(--primary);
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 var(--space-xl);
+            max-height: 0;
+            overflow: hidden;
+            transition: all var(--transition-normal);
+            color: var(--text-secondary);
+        }
+        
+        .faq-item.active .faq-answer {
+            padding-bottom: var(--space-xl);
+            max-height: 500px;
+        }
+        
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--bg-primary);
+            border-top: 1px solid var(--border-color);
+            padding: var(--space-4xl) 0 var(--space-xl);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--space-4xl);
+            margin-bottom: var(--space-3xl);
+        }
+        
+        .footer-brand {
+            max-width: 300px;
+        }
+        
+        .footer-logo {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--space-md);
+        }
+        
+        .footer-tagline {
+            color: var(--text-secondary);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .footer-links-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-2xl);
+        }
+        
+        .footer-column h4 {
+            font-size: 1.125rem;
+            margin-bottom: var(--space-lg);
+            color: var(--text-primary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: var(--space-sm);
+        }
+        
+        .footer-links a {
+            color: var(--text-secondary);
+            transition: color var(--transition-fast);
+        }
+        
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+        
+        .footer-bottom {
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+        }
+        
+        .copyright {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+        
+        .footer-disclaimer {
+            color: var(--warning);
+            font-size: 0.875rem;
+            max-width: 400px;
+        }
+        
+        /* ===== ANIMATIONS ===== */
+        @keyframes float {
+            0%, 100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            33% {
+                transform: translate(30px, -30px) rotate(120deg);
+            }
+            66% {
+                transform: translate(-20px, 20px) rotate(240deg);
+            }
+        }
+        
+        @keyframes messageSlide {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 20px rgba(99, 102, 241, 0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* ===== UTILITY CLASSES ===== */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass-effect {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1024px) {
+            .hero-content,
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-visual {
+                order: -1;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: var(--space-2xl);
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 var(--space-lg);
+            }
+            
+            section {
+                padding: var(--space-3xl) 0;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+            
+            .hero {
+                padding-top: 120px;
+            }
+            
+            .hero-badges {
+                justify-content: center;
+            }
+            
+            .hero-actions {
+                justify-content: center;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .download-card {
+                padding: var(--space-xl);
+            }
+            
+            .footer-links-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+                gap: var(--space-lg);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 var(--space-md);
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .download-meta {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .community-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-links-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .app-mockup {
+                width: 280px;
+                height: 560px;
+            }
+        }
+        
+        /* ===== MOBILE MENU ===== */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background: var(--bg-primary);
+            z-index: var(--z-modal);
+            transition: right var(--transition-normal);
+            padding: var(--space-4xl) var(--space-xl);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .mobile-menu.active {
+            right: 0;
+        }
+        
+        .mobile-menu-header {
+            position: absolute;
+            top: var(--space-xl);
+            right: var(--space-xl);
+        }
+        
+        .close-menu-btn {
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-md);
+            background: var(--bg-secondary);
+        }
+        
+        .mobile-nav-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+            text-align: center;
+        }
+        
+        .mobile-nav-link {
+            font-size: 1.5rem;
+            font-weight: 500;
+            padding: var(--space-md);
+            border-radius: var(--radius-md);
+            transition: background-color var(--transition-fast);
+        }
+        
+        .mobile-nav-link:hover {
+            background: var(--bg-secondary);
+        }
+        
+        .mobile-nav-cta {
+            margin-top: var(--space-2xl);
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">🚀</div>
+                    DOFAST
+                </div>
+                
+                <div class="nav-links">
+                    <a href="#hero" class="nav-link active">Accueil</a>
+                    <a href="#features" class="nav-link">Fonctionnalités</a>
+                    <a href="#about" class="nav-link">À propos</a>
+                    <a href="#download" class="nav-link">Télécharger</a>
+                    <a href="#community" class="nav-link">Communauté</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="#download" class="nav-cta">Télécharger</a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <button class="close-menu-btn" id="closeMenuBtn">✕</button>
+        </div>
+        
+        <ul class="mobile-nav-links">
+            <li><a href="#hero" class="mobile-nav-link">Accueil</a></li>
+            <li><a href="#features" class="mobile-nav-link">Fonctionnalités</a></li>
+            <li><a href="#about" class="mobile-nav-link">À propos</a></li>
+            <li><a href="#download" class="mobile-nav-link">Télécharger</a></li>
+            <li><a href="#community" class="mobile-nav-link">Communauté</a></li>
+            <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+        </ul>
+        
+        <div class="mobile-nav-cta">
+            <a href="#download" class="nav-cta">Télécharger l'APK</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text animate-on-scroll">
+                    <div class="hero-badges">
+                        <span class="badge">
+                            <span class="badge-icon">🤖</span>
+                            IA Intelligente
+                        </span>
+                        <span class="badge">
+                            <span class="badge-icon">🎯</span>
+                            Apprentissage Personnalisé
+                        </span>
+                        <span class="badge">
+                            <span class="badge-icon">🌍</span>
+                            Communauté Mondiale
+                        </span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Apprenez <span>plus vite</span>, allez <span>plus loin</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        DOFAST révolutionne l'apprentissage avec un tuteur IA intelligent, des cours adaptatifs et une communauté engagée. Transformez votre façon d'apprendre dès aujourd'hui.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#download" class="download-button pulse-animation">
+                            <span class="btn-icon">⬇️</span>
+                            Télécharger DOFAST
+                            <span class="btn-badge">GRATUIT</span>
+                        </a>
+                        
+                        <a href="#features" class="btn-secondary">
+                            <span class="btn-icon">▶️</span>
+                            Découvrir les fonctionnalités
+                        </a>
+                    </div>
+                    
+                    <div class="trust-signals">
+                        <p class="trust-text">
+                            <span class="trust-icon">⭐</span>
+                            <strong>4.8/5</strong> - Évalué par 10,000+ apprenants
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="hero-visual animate-on-scroll">
+                    <div class="app-mockup">
+                        <div class="mockup-screen">
+                            <div class="mockup-header">
+                                <div class="app-name">DOFAST AI</div>
+                                <div class="app-status">● En ligne</div>
+                            </div>
+                            
+                            <div class="mockup-messages">
+                                <div class="message user">
+                                    Peux-tu m'expliquer le théorème de Pythagore ?
+                                </div>
+                                
+                                <div class="message ai">
+                                    Bien sûr ! Dans un triangle rectangle, le carré de l'hypoténuse est égal à la somme des carrés des deux autres côtés : a² + b² = c²
+                                </div>
+                                
+                                <div class="message user">
+                                    Donne-moi un exemple concret
+                                </div>
+                                
+                                <div class="message ai">
+                                    Si un triangle a des côtés de 3cm et 4cm, l'hypoténuse sera √(3²+4²) = √(9+16) = √25 = 5cm
+                                </div>
+                            </div>
+                            
+                            <div class="mockup-stats">
+                                <div class="stat-item">
+                                    <div class="stat-value">75%</div>
+                                    <div class="stat-label">Progression</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">28</div>
+                                    <div class="stat-label">Jours consécutifs</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value">A+</div>
+                                    <div class="stat-label">Niveau</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Fonctionnalités Intelligentes</h2>
+                <p class="section-subtitle">
+                    Découvrez les outils puissants qui font de DOFAST l'application éducative la plus avancée
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🤖</div>
+                    <h3 class="feature-title">Tuteur IA Conversationnel</h3>
+                    <p class="feature-description">
+                        Interagissez avec une IA intelligente qui répond à vos questions, explique les concepts complexes et s'adapte à votre niveau d'apprentissage en temps réel.
+                    </p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Analytique d'Apprentissage</h3>
+                    <p class="feature-description">
+                        Suivez vos progrès avec des statistiques détaillées, identifiez vos points forts et vos axes d'amélioration grâce à notre système d'analyse avancé.
+                    </p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🧩</div>
+                    <h3 class="feature-title">Quiz Adaptatifs</h3>
+                    <p class="feature-description">
+                        Des milliers de quiz intelligents qui s'ajustent à votre niveau. Plus vous progressez, plus les questions deviennent pertinentes et stimulantes.
+                    </p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Mode Hors Ligne</h3>
+                    <p class="feature-description">
+                        Téléchargez vos cours et continuez à apprendre même sans connexion Internet. Votre progression se synchronise automatiquement dès que vous êtes reconnecté.
+                    </p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">Multilingue</h3>
+                    <p class="feature-description">
+                        Disponible en Français, Anglais et Kiswahili. L'IA comprend et répond dans votre langue préférée pour une expérience d'apprentissage naturelle.
+                    </p>
+                </div>
+                
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-title">Communauté Sociale</h3>
+                    <p class="feature-description">
+                        Rejoignez des groupes d'étude, participez à des défis éducatifs et connectez-vous avec des apprenants du monde entier qui partagent vos intérêts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Notre Mission Éducative</h2>
+                <p class="section-subtitle">
+                    Transformer l'apprentissage grâce à la technologie et la communauté
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <h3>Révolutionner l'Éducation avec l'IA</h3>
+                    <p>
+                        DOFAST est née d'une vision simple mais puissante : rendre l'éducation de qualité accessible à tous, partout dans le monde. Nous combinons l'intelligence artificielle la plus avancée avec des principes pédagogiques éprouvés pour créer une expérience d'apprentissage véritablement personnalisée.
+                    </p>
+                    
+                    <p>
+                        Contrairement aux plateformes éducatives traditionnelles, DOFAST s'adapte à VOTRE rythme, VOS intérêts et VOS objectifs d'apprentissage. Notre tuteur IA n'est pas seulement un outil de réponse - c'est un compagnon d'apprentissage qui évolue avec vous.
+                    </p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">Apprenants Actifs</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Taux de Satisfaction</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Disponibilité IA</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Langues Supportées</div>
+                        </div>
+                    </div>
+                    
+                    <div class="clarification-box animate-on-scroll">
+                        <h4 class="clarification-title">
+                            <span>⚠️</span>
+                            Clarification Importante
+                        </h4>
+                        <p>
+                            <strong>DOFAST est exclusivement une application éducative</strong>. Nous n'avons <strong>aucun lien</strong> avec Dofasting ou toute autre application de santé, jeûne ou bien-être. Notre mission se concentre uniquement sur l'éducation et le développement des compétences.
+                        </p>
+                        <p class="mt-1">
+                            Notre technologie est dédiée à l'apprentissage, pas au suivi de santé. Chaque fonctionnalité a été conçue pour optimiser votre parcours éducatif.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-visual animate-on-scroll">
+                    <div class="app-mockup" style="transform: perspective(1000px) rotateY(10deg) rotateX(5deg);">
+                        <div class="mockup-screen">
+                            <div class="mockup-header">
+                                <div class="app-name">DOFAST Progression</div>
+                                <div class="app-status">📈 Analyse</div>
+                            </div>
+                            
+                            <div class="progress-display">
+                                <div class="progress-chart">
+                                    <div class="chart-bar" style="height: 80%; background: linear-gradient(to top, var(--primary), var(--secondary));">
+                                        <span class="chart-label">Mathématiques</span>
+                                    </div>
+                                    <div class="chart-bar" style="height: 65%; background: linear-gradient(to top, var(--primary), var(--secondary));">
+                                        <span class="chart-label">Sciences</span>
+                                    </div>
+                                    <div class="chart-bar" style="height: 90%; background: linear-gradient(to top, var(--primary), var(--secondary));">
+                                        <span class="chart-label">Langues</span>
+                                    </div>
+                                    <div class="chart-bar" style="height: 75%; background: linear-gradient(to top, var(--primary), var(--secondary));">
+                                        <span class="chart-label">Histoire</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="insights-section">
+                                <h4 class="insights-title">Recommandations IA</h4>
+                                <ul class="insights-list">
+                                    <li>✔️ Excellent en langues - Continue comme ça !</li>
+                                    <li>📚 Focus recommandé sur les sciences</li>
+                                    <li>🎯 Défi quotidien disponible</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOWNLOAD SECTION -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Téléchargez DOFAST Maintenant</h2>
+                <p class="section-subtitle">
+                    Rejoignez des milliers d'apprenants et commencez votre transformation éducative
+                </p>
+            </div>
+            
+            <div class="download-content animate-on-scroll">
+                <div class="download-card">
+                    <div class="download-header">
+                        <div class="download-icon">🚀</div>
+                        <div class="download-info">
+                            <h3>DOFAST Version Complète</h3>
+                            <p class="version">Version 2.1.0 • Mise à jour : Mars 2024</p>
+                        </div>
+                    </div>
+                    
+                    <p class="download-description">
+                        Téléchargez l'APK officiel de DOFAST et accédez à toutes les fonctionnalités premium gratuitement : tuteur IA, quiz illimités, mode hors ligne et communauté mondiale.
+                    </p>
+                    
+                    <div class="download-meta">
+                        <div class="meta-item">
+                            <div class="meta-icon">📱</div>
+                            <div class="meta-text">Android 8.0+</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">📦</div>
+                            <div class="meta-text">47.5 MB</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">⚡</div>
+                            <div class="meta-text">Installation Rapide</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">🔒</div>
+                            <div class="meta-text">100% Sécurisé</div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://apkpure.com/p/formation.apgwq" 
+                       class="download-button pulse-animation" 
+                       id="downloadMainBtn"
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        <span class="btn-icon">⬇️</span>
+                        Télécharger l'APK (47.5 MB)
+                    </a>
+                    
+                    <div class="download-security">
+                        <span class="security-icon">✅</span>
+                        Téléchargement sécurisé – Version officielle DOFAST
+                    </div>
+                    
+                    <div class="download-instructions">
+                        <p class="instructions-title">Instructions d'installation :</p>
+                        <ol class="instructions-list">
+                            <li>Téléchargez le fichier APK ci-dessus</li>
+                            <li>Autorisez les "Sources inconnues" dans les paramètres</li>
+                            <li>Installez l'application</li>
+                            <li>Créez votre compte gratuit</li>
+                            <li>Commencez votre apprentissage !</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY SECTION -->
+    <section class="community" id="community">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Rejoignez Notre Communauté</h2>
+                <p class="section-subtitle">
+                    Connectez-vous avec des apprenants passionnés et obtenez un support personnalisé
+                </p>
+            </div>
+            
+            <div class="community-grid">
+                <div class="community-card animate-on-scroll">
+                    <div class="community-icon">💬</div>
+                    <h3>Groupe WhatsApp Communautaire</h3>
+                    <p>
+                        Échangez avec des milliers d'apprenants, posez vos questions, partagez vos progrès et participez à des discussions enrichissantes avec notre communauté mondiale.
+                    </p>
+                    <p class="community-stats">
+                        <strong>25,000+ membres</strong> • Support 24/7 • Discussions actives
+                    </p>
+                    <a href="https://chat.whatsapp.com/GHavCPQTb3aCHuEldoKXke?mode=git" 
+                       class="community-button"
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        <span class="btn-icon">👥</span>
+                        Rejoindre le Groupe
+                    </a>
+                </div>
+                
+                <div class="community-card animate-on-scroll">
+                    <div class="community-icon">📚</div>
+                    <h3>Chaîne WhatsApp Tutoriels</h3>
+                    <p>
+                        Recevez quotidiennement des tutoriels exclusifs, astuces d'apprentissage, défis éducatifs et annonces importantes directement sur WhatsApp.
+                    </p>
+                    <p class="community-stats">
+                        <strong>Contenu exclusif</strong> • Astuces quotidiennes • Défis éducatifs
+                    </p>
+                    <a href="https://whatsapp.com/channel/0029Vb7A3v31yT2I34BCWA0q" 
+                       class="community-button"
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        <span class="btn-icon">📢</span>
+                        Suivre la Chaîne
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Questions Fréquentes</h2>
+                <p class="section-subtitle">
+                    Tout ce que vous devez savoir sur DOFAST
+                </p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>DOFAST est-elle vraiment gratuite ?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Oui, DOFAST est entièrement gratuite !</strong> Toutes les fonctionnalités principales - tuteur IA, quiz, mode hors ligne, communauté - sont accessibles sans frais. Nous croyons en l'éducation accessible à tous.</p>
+                        <p>Nous proposons des fonctionnalités premium optionnelles pour les utilisateurs souhaitant une expérience encore plus personnalisée, mais l'essentiel de la plateforme reste gratuit.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>L'application fonctionne-t-elle sans Internet ?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Absolument !</strong> DOFAST dispose d'un mode hors ligne complet. Vous pouvez télécharger vos cours, quiz et flashcards préférés pour y accéder même sans connexion Internet.</p>
+                        <p>Le tuteur IA nécessite une connexion pour les réponses en temps réel, mais toutes les autres fonctionnalités éducatives sont pleinement accessibles hors ligne.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>DOFAST est-elle liée à une application de jeûne ?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Non, aucun lien !</strong> DOFAST est exclusivement une application éducative. Nous n'avons aucune association avec Dofasting ou toute autre application de santé, jeûne ou bien-être.</p>
+                        <p><strong>Notre mission est uniquement l'éducation.</strong> Toutes nos fonctionnalités sont conçues pour optimiser l'apprentissage et le développement des compétences.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>Quelles langues sont disponibles ?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>DOFAST est disponible en <strong>trois langues principales</strong> :</p>
+                        <ul>
+                            <li><strong>Français</strong> - Langue principale avec support complet</li>
+                            <li><strong>Anglais</strong> - Interface et contenu complets</li>
+                            <li><strong>Kiswahili</strong> - Support basique en expansion</li>
+                        </ul>
+                        <p>Notre tuteur IA comprend et répond dans ces trois langues pour une expérience d'apprentissage naturelle.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>L'application est-elle sécurisée ?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>La sécurité est notre priorité.</strong> Tous les téléchargements via APKPure sont vérifiés et sécurisés. L'application ne demande que les permissions nécessaires à son fonctionnement éducatif.</p>
+                        <p>Vos données d'apprentissage sont chiffrées et protégées conformément aux meilleures pratiques de sécurité numérique.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <div class="faq-question">
+                        <span>Comment fonctionne le tuteur IA ?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Notre tuteur IA utilise une technologie conversationnelle avancée qui :</p>
+                        <ul>
+                            <li>Répond à vos questions éducatives en temps réel</li>
+                            <li>S'adapte à votre niveau et style d'apprentissage</li>
+                            <li>Fournit des explications étape par étape</li>
+                            <li>Crée des exercices personnalisés</li>
+                            <li>Analyse vos progrès pour des recommandations ciblées</li>
+                        </ul>
+                        <p>Plus vous l'utilisez, plus il comprend vos besoins et s'améliore pour vous aider.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">DOFAST</div>
+                    <p class="footer-tagline">
+                        Application intelligente de formation & réseau social éducatif
+                    </p>
+                    <p class="slogan">
+                        Apprendre plus vite. Aller plus loin.
+                    </p>
+                </div>
+                
+                <div class="footer-links-grid">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul class="footer-links">
+                            <li><a href="#hero">Accueil</a></li>
+                            <li><a href="#features">Fonctionnalités</a></li>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#download">Télécharger</a></li>
+                            <li><a href="#community">Communauté</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Ressources</h4>
+                        <ul class="footer-links">
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="https://chat.whatsapp.com/GHavCPQTb3aCHuEldoKXke?mode=git" target="_blank">Support</a></li>
+                            <li><a href="https://whatsapp.com/channel/0029Vb7A3v31yT2I34BCWA0q" target="_blank">Tutoriels</a></li>
+                            <li><a href="#community">Communauté</a></li>
+                            <li><a href="#download">Téléchargement</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Légal</h4>
+                        <ul class="footer-links">
+                            <li><a href="#about">À propos de nous</a></li>
+                            <li><a href="#faq">Clarification</a></li>
+                            <li><a href="#footer">Mentions légales</a></li>
+                            <li><a href="#footer">Confidentialité</a></li>
+                            <li><a href="#footer">Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 DOFAST – Application éducative intelligente. Tous droits réservés.
+                </div>
+                
+                <div class="footer-disclaimer">
+                    ⚠️ DOFAST est une plateforme d'apprentissage. Aucun lien avec Dofasting ou toute application de santé.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        // ===== CONFIGURATION =====
+        const CONFIG = {
+            downloadTracking: true,
+            animationsEnabled: true,
+            mobileBreakpoint: 768
+        };
+
+        // ===== ÉLÉMENTS DOM =====
+        const DOM = {
+            header: document.getElementById('header'),
+            mobileMenuBtn: document.getElementById('mobileMenuBtn'),
+            closeMenuBtn: document.getElementById('closeMenuBtn'),
+            mobileMenu: document.getElementById('mobileMenu'),
+            navLinks: document.querySelectorAll('.nav-link'),
+            downloadBtn: document.getElementById('downloadMainBtn'),
+            faqItems: document.querySelectorAll('.faq-item'),
+            animateElements: document.querySelectorAll('.animate-on-scroll')
+        };
+
+        // ===== ÉTAT GLOBAL =====
+        let state = {
+            scrollPosition: 0,
+            isMobileMenuOpen: false,
+            downloadCount: 0,
+            lastScrollTime: 0
+        };
+
+        // ===== ANIMATIONS AU SCROLL =====
+        function initScrollAnimations() {
+            if (!CONFIG.animationsEnabled) return;
+            
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            DOM.animateElements.forEach(element => {
+                observer.observe(element);
+            });
+        }
+
+        // ===== GESTION DU HEADER =====
+        function handleHeaderScroll() {
+            const currentScroll = window.pageYOffset;
+            const scrollDelta = currentScroll - state.scrollPosition;
+            
+            // Masquer/afficher le header au scroll
+            if (currentScroll > 100) {
+                DOM.header.classList.add('scrolled');
+                
+                if (scrollDelta > 5 && currentScroll > 200) {
+                    DOM.header.style.transform = 'translateY(-100%)';
+                } else if (scrollDelta < -5) {
+                    DOM.header.style.transform = 'translateY(0)';
+                }
+            } else {
+                DOM.header.classList.remove('scrolled');
+                DOM.header.style.transform = 'translateY(0)';
+            }
+            
+            state.scrollPosition = currentScroll;
+        }
+
+        // ===== NAVIGATION ACTIVE =====
+        function updateActiveNavLink() {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    DOM.navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        // ===== MENU MOBILE =====
+        function initMobileMenu() {
+            DOM.mobileMenuBtn.addEventListener('click', () => {
+                openMobileMenu();
+            });
+            
+            DOM.closeMenuBtn.addEventListener('click', () => {
+                closeMobileMenu();
+            });
+            
+            // Fermer le menu en cliquant sur un lien
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+            
+            // Fermer avec la touche Échap
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && state.isMobileMenuOpen) {
+                    closeMobileMenu();
+                }
+            });
+        }
+        
+        function openMobileMenu() {
+            DOM.mobileMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            state.isMobileMenuOpen = true;
+        }
+        
+        function closeMobileMenu() {
+            DOM.mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+            state.isMobileMenuOpen = false;
+        }
+
+        // ===== BOUTON DE TÉLÉCHARGEMENT =====
+        function initDownloadButton() {
+            if (!DOM.downloadBtn) return;
+            
+            DOM.downloadBtn.addEventListener('click', function(e) {
+                if (CONFIG.downloadTracking) {
+                    state.downloadCount++;
+                    trackDownload();
+                }
+                
+                // Animation du bouton
+                this.classList.add('clicked');
+                setTimeout(() => {
+                    this.classList.remove('clicked');
+                }, 300);
+                
+                // Message de confirmation après 3 téléchargements
+                if (state.downloadCount === 3) {
+                    setTimeout(() => {
+                        showNotification('Merci pour votre confiance ! Profitez pleinement de DOFAST 📚');
+                    }, 1000);
+                }
+            });
+        }
+        
+        function trackDownload() {
+            // Simulation d'un tracking analytics
+            const eventData = {
+                event: 'download_initiated',
+                timestamp: new Date().toISOString(),
+                count: state.downloadCount,
+                userAgent: navigator.userAgent
+            };
+            
+            console.log('Download tracked:', eventData);
+            
+            // Dans un cas réel, envoyer à Google Analytics
+            // gtag('event', 'download', { ... });
+        }
+
+        // ===== FAQ ACCORDÉON =====
+        function initFAQ() {
+            DOM.faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Fermer les autres items
+                    DOM.faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Ouvrir/fermer l'item actuel
+                    item.classList.toggle('active');
+                });
+            });
+            
+            // Ouvrir le premier item
+            if (DOM.faqItems.length > 0) {
+                DOM.faqItems[0].classList.add('active');
+            }
+        }
+
+        // ===== SMOOTH SCROLL =====
+        function initSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerHeight = DOM.header.clientHeight;
+                        const targetPosition = targetElement.offsetTop - headerHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // ===== NOTIFICATIONS =====
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <span class="notification-icon">✨</span>
+                    <span class="notification-text">${message}</span>
+                </div>
+            `;
+            
+            // Styles de la notification
+            notification.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: var(--bg-card);
+                border: 1px solid var(--border-color);
+                border-left: 4px solid var(--success);
+                border-radius: var(--radius-md);
+                padding: var(--space-md) var(--space-lg);
+                box-shadow: var(--shadow-lg);
+                z-index: var(--z-modal);
+                transform: translateY(100px);
+                opacity: 0;
+                transition: all 0.3s ease;
+                max-width: 400px;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animation d'entrée
+            setTimeout(() => {
+                notification.style.transform = 'translateY(0)';
+                notification.style.opacity = '1';
+            }, 100);
+            
+            // Disparaître après 5 secondes
+            setTimeout(() => {
+                notification.style.transform = 'translateY(100px)';
+                notification.style.opacity = '0';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }, 5000);
+        }
+
+        // ===== PERFORMANCE OPTIMIZATION =====
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            };
+        }
+
+        // ===== INITIALISATION =====
+        function init() {
+            // Initialiser les composants
+            initMobileMenu();
+            initDownloadButton();
+            initFAQ();
+            initSmoothScroll();
+            initScrollAnimations();
+            
+            // Écouteurs d'événements
+            window.addEventListener('scroll', throttle(() => {
+                handleHeaderScroll();
+                updateActiveNavLink();
+            }, 100));
+            
+            window.addEventListener('resize', throttle(() => {
+                if (window.innerWidth > CONFIG.mobileBreakpoint && state.isMobileMenuOpen) {
+                    closeMobileMenu();
+                }
+            }, 250));
+            
+            // Initialiser l'état
+            handleHeaderScroll();
+            updateActiveNavLink();
+            
+            // Chargement initial terminé
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+            }, 100);
+        }
+
+        // ===== DÉMARRAGE =====
+        document.addEventListener('DOMContentLoaded', init);
+
+        // ===== EXTRA FEATURES =====
+        // Ajouter un effet de particules en arrière-plan
+        function createParticles() {
+            const particlesContainer = document.createElement('div');
+            particlesContainer.id = 'particles';
+            particlesContainer.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                z-index: -1;
+                overflow: hidden;
+            `;
+            
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.style.cssText = `
+                    position: absolute;
+                    width: ${Math.random() * 3 + 1}px;
+                    height: ${Math.random() * 3 + 1}px;
+                    background: ${i % 3 === 0 ? 'var(--primary)' : i % 3 === 1 ? 'var(--secondary)' : 'var(--accent)'};
+                    border-radius: 50%;
+                    opacity: ${Math.random() * 0.3 + 0.1};
+                    animation: floatParticle ${Math.random() * 20 + 10}s linear infinite;
+                    animation-delay: ${Math.random() * 5}s;
+                `;
+                
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                particlesContainer.appendChild(particle);
+            }
+            
+            // Ajouter l'animation CSS pour les particules
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes floatParticle {
+                    0% {
+                        transform: translate(0, 0) rotate(0deg);
+                    }
+                    25% {
+                        transform: translate(${Math.random() * 100 - 50}px, ${Math.random() * 100 - 50}px) rotate(90deg);
+                    }
+                    50% {
+                        transform: translate(${Math.random() * 100 - 50}px, ${Math.random() * 100 - 50}px) rotate(180deg);
+                    }
+                    75% {
+                        transform: translate(${Math.random() * 100 - 50}px, ${Math.random() * 100 - 50}px) rotate(270deg);
+                    }
+                    100% {
+                        transform: translate(0, 0) rotate(360deg);
+                    }
+                }
+            `;
+            
+            document.head.appendChild(style);
+            document.body.appendChild(particlesContainer);
+        }
+
+        // Démarrer les particules après le chargement
+        window.addEventListener('load', createParticles);
+    </script>
+</body>
+</html>
